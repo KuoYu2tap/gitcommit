@@ -1,6 +1,6 @@
 #!/bin/bash
 r=$RANDOM
-url="~/gitcommit/commitfile"
+url="~/gitcommit/randomfile"
 echo $r>"$url/$r.txt"
 nowpwd=`pwd`
 cd $url
