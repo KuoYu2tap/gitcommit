@@ -2,7 +2,7 @@
 r=$RANDOM
 nowpwd=`pwd`
 
-url="~/gitcommit/randomfile/"
+url="~/gitcommit/randomfile"
 
 cd `echo $url`
 echo $r>"$r.txt"
