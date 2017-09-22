@@ -2,9 +2,8 @@
 r=$RANDOM
 nowpwd=`pwd`
 
-url="~/gitcommit/randomfile"
+cd /root/gitcommit/randomfile
 
-cd `echo $url`
 echo $r>"$r.txt"
 cd ..
 git add -A
