@@ -1,11 +1,13 @@
 #!/bin/bash
 r=$RANDOM
-url="~/gitcommit/randomfile"
-echo $r>"$url/$r.txt"
 nowpwd=`pwd`
-cd $url
-git add -A
 
+url="~/gitcommit/randomfile/"
+
+cd `echo $url`
+echo $r>"$r.txt"
+cd ..
+git add -A
 git commit -m "`date`"
 
-cd $pwd
+cd `echo $pwd`
