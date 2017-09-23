@@ -8,5 +8,5 @@ echo -e $r"`date`\n">>"$r.txt"
 cd ..
 git add -A
 git commit -m "`date`"
-
+git push
 cd `echo $pwd`
