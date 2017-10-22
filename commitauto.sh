@@ -11,7 +11,6 @@ then
 	while [[ -z i ]];do
 		echo -e $r"`date`\n">>"$r.txt"
 		i=$(($i-1))
-		echo $i
 	done
 
 	cd ..
