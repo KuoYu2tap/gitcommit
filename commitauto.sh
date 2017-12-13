@@ -4,7 +4,7 @@ nowpwd="/root/gitcommit/randomfile/"
 
 
 while [[ $r -gt 0 ]];do
-	echo -e "`free -m`\n">> $nowpwd"`date +%D_%T_%N`.txt"
+	echo -e "`free -m`\n">> $nowpwd"`date +%F_%T_%N`.txt"
 	r=$(($r-1))
 done
 
