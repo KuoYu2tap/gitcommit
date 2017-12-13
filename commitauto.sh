@@ -1,21 +1,13 @@
 #!/bin/bash
-r=$RANDOM
-nowpwd=`pwd`
+r=$(($RANDOM % 3 + 1))
+nowpwd="/root/gitcommit/randomfile/"
 
-cd /root/gitcommit/randomfile
 
-if [[ $(($r%13))!=0 ]];
-then
-	i=$(($r%3))
-	#echo $i
-	while [[ -z i ]];do
-		echo -e $r"`date`\n">>"$r.txt"
-		#i=$(($i-1))
-	done
+while [[ $r -gt 0 ]];do
+	echo -e "`free -m`\n">> $nowpwd"`date`.txt"
+	r=$(($r-1))
+done
 
-	cd ..
-	git add -A
-	git commit -m "`date`"
-fi
+git add -A
+git commit -m "`date`"
 
-cd `echo $pwd`
