@@ -1,7 +1,9 @@
 #!/bin/bash
 r=$(($RANDOM % 3))
-nowpwd="/root/gitcommit/randomfile/"
+PD=`pwd`
+nowpwd="/root/gitcommit/"
 
+cd $nowpwd
 
 while [[ $r -gt 0 ]];do
 	echo -e "`free -m`\n">> $nowpwd"`date +%F_%T_%N`.txt"
@@ -12,3 +14,4 @@ git add -A
 git commit -m "`date`"
 
 git push
+cd $PD
