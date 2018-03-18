@@ -1,5 +1,5 @@
 #!/bin/bash
-r=$(($RANDOM % 3))
+r=$(($RANDOM % 2))
 PD=`pwd`
 nowpwd="/root/gitcommit/"
 
