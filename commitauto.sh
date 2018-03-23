@@ -7,7 +7,7 @@ nowpwd="/root/gitcommit/"
 cd $nowpwd
 echo "key: $r"
 while [[ $r -gt 0 ]];do
-	echo -e "`free -m`\n">> $nowpwd"gitcommit/""`date +%F_%T_%N`.txt"
+	echo -e "`free -m`\n">> $nowpwd"commits/""`date +%F_%T_%N`.txt"
 	r=$(($r-1))
 done
 
