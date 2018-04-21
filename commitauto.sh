@@ -5,9 +5,10 @@ PD=`pwd`
 nowpwd="/root/gitcommit/"
 
 cd $nowpwd
+MSG=`python2.6 /root/show_ss_msg.py`
 echo "key: $r\n" >> /root/commit_keys
 while [[ $r -gt 0 ]];do
-	echo -e "`free -m`\n">> $nowpwd"commits/""`date +%F_%T_%N`.txt"
+	echo -e "`free -m`\n">> $nowpwd"commits/""`date +%F_%T`$MSG.txt"
 	r=$(($r-1))
 done
 
