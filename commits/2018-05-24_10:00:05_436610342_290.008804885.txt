@@ -1,0 +1,5 @@
+             total       used       free     shared    buffers     cached
+Mem:           996        924         71          0        163        310
+-/+ buffers/cache:        451        545
+Swap:            0          0          0
+
